@@ -1,0 +1,52 @@
+@import "./variables.scss";
+
+.header {
+  position: relative;
+  z-index: 2;
+}
+
+header {
+  padding: 0 20px;
+  padding-top: 20px;
+  display: grid;
+  grid-template-columns: 1fr max-content 1fr;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu {
+  @include flex;
+  gap: 16px;
+
+  &_item {
+    a {
+      font-family: Inter;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      transition: color 0.3s ease-in-out;
+
+      &:hover {
+        color: $action;
+      }
+    }
+  }
+}
+
+.socials {
+  @include flex;
+  gap: 10px;
+  justify-content: flex-end;
+
+  svg {
+    transition: fill 0.3s ease-in-out;
+  }
+
+  &-item {
+    &:hover {
+      svg {
+        fill: $action;
+      }
+    }
+  }
+}

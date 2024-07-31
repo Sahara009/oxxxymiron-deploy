@@ -1,0 +1,110 @@
+.tour {
+  padding: 20px 0;
+
+  &_page {
+    position: relative;
+
+    &:before {
+      content: "";
+      display: block;
+      background: url(../assets/images/tour-bg.webp) no-repeat center/cover;
+      width: 100vw;
+      max-width: 1920px;
+      height: 100vh;
+      max-height: 945px;
+      top: -120px;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-54%);
+      z-index: -1;
+    }
+  }
+
+  &_item {
+    @include flex;
+    padding: 29px 0;
+    text-transform: uppercase;
+    justify-content: space-between;
+    border-top: 1px solid #d9d9d980;
+
+    &:last-child {
+      border-bottom: 1px solid #d9d9d980;
+    }
+  }
+
+  &_date {
+    font-size: 20px;
+    font-weight: 900;
+    color: &light;
+    padding-bottom: 3px;
+  }
+
+  &_place {
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 400;
+    opacity: 50%;
+  }
+
+  &_city {
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 700;
+  }
+
+  &_button {
+    @include button;
+  }
+
+  &_title {
+    font-family: Inter;
+    font-size: 60px;
+    font-weight: 900;
+    line-height: 72.61px;
+    text-transform: uppercase;
+    margin: 41px 0px;
+  }
+
+  &_countries {
+    @include flex;
+    justify-content: flex-start;
+    margin: 30px 0;
+    column-gap: 16px;
+  }
+
+  &_con {
+    color: $grey;
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+    position: relative;
+    transition: color 0.25s ease-in-out;
+
+    &:hover {
+      color: white;
+    }
+  }
+
+  &_button {
+    @include button;
+
+    &.soldout {
+      background: #505050;
+      cursor: not-allowed;
+    }
+  }
+}
+.tours_list {
+  margin-top: 20px;
+}
+.video_banner {
+  position: relative;
+  padding-top: 32px;
+  z-index: 2;
+  margin-top: 100px;
+
+  video {
+    width: 100%;
+    height: auto;
+  }
+}

@@ -1,0 +1,147 @@
+.track_skeleton {
+  justify-content: space-between;
+  margin-bottom: 40px;
+  margin-top: 40px;
+}
+.track_skeleton_info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.tracks-section {
+  position: relative;
+  margin-top: 500px;
+  margin: 400px 20px 100px;
+}
+.tracks {
+  padding: 16px 0 32px 0;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+
+  &-list {
+    margin-top: 40px;
+    margin-bottom: 90px;
+
+    &__item {
+      display: grid;
+      gap: 24px;
+      grid-template-columns: 300px 1fr;
+      grid-template-rows: auto 40px;
+      grid-template-areas:
+        "image info"
+        "image button";
+
+      &-image {
+        grid-area: image;
+        width: 100%;
+        height: 300px;
+
+        img {
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-info {
+        grid-area: info;
+      }
+
+      &-date {
+        color: $grey;
+        font-size: 14px;
+        text-transform: uppercase;
+      }
+
+      &-title {
+        color: $light;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 16px 0;
+        line-height: 115%;
+      }
+
+      &-description {
+        color: $light;
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 24px;
+      }
+
+      &-button {
+        @include button;
+        grid-area: button;
+        width: 213px;
+        padding: 12px;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 40px;
+      }
+    }
+  }
+}
+
+.track {
+  cursor: pointer;
+  text-transform: uppercase;
+  width: max-content;
+  display: block;
+  gap: 16px;
+  justify-content: space-between;
+  position: relative;
+  padding-bottom: 10px;
+  max-width: 100%;
+
+  &-item {
+    &:nth-child(2n) {
+      .track {
+        margin-left: auto;
+        grid-template-columns: 1fr 300px;
+        grid-template-areas:
+          "date image"
+          ". title";
+      }
+    }
+  }
+
+  &-image {
+    grid-area: image;
+    width: 100%;
+    height: 300px;
+    position: relative;
+    margin-bottom: 10px;
+
+    img {
+      object-fit: cover;
+    }
+
+    .icon {
+      &-pause {
+        width: 100px;
+        height: 100px;
+        fill: $light;
+        @include center;
+      }
+    }
+  }
+
+  &-date {
+    color: $grey;
+    font-size: 14px;
+    grid-area: date;
+  }
+
+  &-title {
+    color: $light;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 125%;
+    position: absolute;
+    grid-area: title;
+    top: 100%;
+    z-index: 2;
+  }
+}

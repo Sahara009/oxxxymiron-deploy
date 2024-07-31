@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@import "./mixins.scss";
+@import "./reset.scss";
+@import "./variables.scss";
+@import "./header.scss";
+@import "./banner.scss";
+@import "./tours.scss";
+@import "./tracks.scss";
+@import "./news.scss";
+@import "./footer.scss";
+
+// * {
+//   border: 1px solid red;
+// }
+body {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 400;
+  font-family: Inter, Roboto, sans-serif;
+  overflow-x: hidden;
+  background: $primary;
+  color: $light;
+}
+.wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.icon {
+  width: 16px;
+  fill: white;
+}
+
+h2 {
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.link {
+  text-decoration: none;
+  color: $light;
+}
