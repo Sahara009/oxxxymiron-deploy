@@ -8,12 +8,37 @@ import { NewsPageSkeleton } from "./Skeleton/NewsPageSkeleton";
 
 export const NewsPage = () => {
   const dispatch = useDispatch();
-  const news = useSelector((state) => state.news.news);
+  // const news = useSelector((state) => state.news.news);
   const isLoading = useSelector((state) => state.news.isLoading);
 
   useEffect(() => {
     dispatch(getNews());
   }, [dispatch]);
+
+  let news = [
+    {
+      id: 1,
+      cover: "https://i.ytimg.com/vi/75CkkZHIT14/maxresdefault.jpg",
+      title: "Oxxxymiron - Лондон (World Tour 2023) - YouTube",
+    },
+    {
+      id: 2,
+      cover: "https://i.ytimg.com/vi/kiLxjdQ4oPo/maxresdefault.jpg",
+      title: "OXXXYMIRON - Тель-Авив (World Tour 2023) - YouTube",
+    },
+    {
+      id: 3,
+      cover:
+        "https://avatars.mds.yandex.net/i?id=a384e8c88c2a59b36431700fbd280f6d_l-9285955-images-thumbs&n=13",
+      title: "ПРИГЛАШЕНИЕ НА МИРОВОЙ ТУР OXXXYMIRON 2023/2024 -",
+    },
+    {
+      id: 4,
+      cover:
+        "https://avatars.mds.yandex.net/i?id=8f6b9df5837a2114a35dd70b06abc851_l-9806046-images-thumbs&n=13",
+      title: "MAKING OF: ЛИГА ОПАСНОГО ИНТЕРНЕТА (2023) - YouTube",
+    },
+  ];
 
   return (
     <section className="news-page page">
