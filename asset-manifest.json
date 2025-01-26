@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/oxxxymiron-site/static/css/main.f75e4d2e.css",
+    "main.js": "/oxxxymiron-site/static/js/main.4fd50846.js",
+    "static/media/oxxxytour.mp4": "/oxxxymiron-site/static/media/oxxxytour.47d83b0b3f0704e7fb3d.mp4",
+    "static/media/text.webm": "/oxxxymiron-site/static/media/text.d628dc5d558acb60b7b0.webm",
+    "static/media/banner-glow.webp": "/oxxxymiron-site/static/media/banner-glow.7313b7c0dba063e963bf.webp",
+    "static/media/effect.webp": "/oxxxymiron-site/static/media/effect.641f0311714514773a3a.webp",
+    "static/media/banner.webp": "/oxxxymiron-site/static/media/banner.3a1c7177f2f763f3052f.webp",
+    "static/media/main-bg.webp": "/oxxxymiron-site/static/media/main-bg.99ad9f780d1dcee7870e.webp",
+    "static/media/tour-bg.webp": "/oxxxymiron-site/static/media/tour-bg.ca5289ce5d9a26515b33.webp",
+    "static/media/oxxxyshop.webp": "/oxxxymiron-site/static/media/oxxxyshop.decced1f65f3f4a9b2cb.webp",
+    "static/media/logo.webp": "/oxxxymiron-site/static/media/logo.ba0c8b6a290f1c9b93dc.webp",
+    "index.html": "/oxxxymiron-site/index.html",
+    "main.f75e4d2e.css.map": "/oxxxymiron-site/static/css/main.f75e4d2e.css.map",
+    "main.4fd50846.js.map": "/oxxxymiron-site/static/js/main.4fd50846.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f75e4d2e.css",
+    "static/js/main.4fd50846.js"
+  ]
+}
